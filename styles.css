@@ -7,12 +7,16 @@
     font-size: 26px;
     background-color: #160a14;
   }
+  .body1 {
+    background-color: #160a14;
+  }
   .content {
     width: 100%;
     height: 700px;
     display: flex;
     justify-items: center;
     align-items: center;
+    margin :10px;
   }
   .split {
     width:100%;
@@ -31,7 +35,7 @@
   .gutter {
     cursor: e-resize;
     height: 100%;
-    background: #3e2137;
+    background-image: linear-gradient(0deg,#17434b 10%,#3e2137 80%);
   }
   h1{
     text-align: center;
