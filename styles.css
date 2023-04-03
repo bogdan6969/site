@@ -6,7 +6,7 @@ body {
     height: 100vh;
     font-size: 26px;
     background-image: linear-gradient(0deg,#174b44,#1f0e1c 90%);
-    background-size: 400% 400%;
+    background-size: 500% 500%;
 }
 /* спліт */
 .content {
@@ -36,6 +36,12 @@ body {
     background-image: linear-gradient(0deg,#17434b 10%,#3e2137 80%);
 }
 /* текст */
+marquee{
+  color: #e2b230;
+  background-image: linear-gradient(-90deg,#174b44,#30162b00 90%);
+  font-family: "Lobster";
+  font-weight: 10;
+}
 h1{
     text-align: center;
     font-style: italic;
