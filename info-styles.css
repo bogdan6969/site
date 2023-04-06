@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    cursor:url("info/cursur5.png"),default;
 }
 body {
     margin: 0;
@@ -7,17 +8,21 @@ body {
     font-size: 26px;
     background-image: url(info/hello.png);
     background-attachment: fixed;
+    color: #ffffff;                  
 }
 h1{
  color: #ffffff;
 }
 li{
-    color: #ff8a8a;
+    color: #ffffff;
 }
 a:link, a:visited {
     color: #f3f3f3;
   }
 a:hover, a:active {
-    background-color: #e2b330;
+    background-color: #ffffff;
     color: #17234b;
   }
+summary{
+    color: #ffffff;
+}
