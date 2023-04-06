@@ -1,0 +1,21 @@
+/* тіло */
+* {
+    box-sizing: border-box;
+    cursor:url("fail-cursor.png"),default;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    font-size: 26px;
+    background-image: url(fail.png);
+    background-attachment: fixed;
+}
+/* текст */
+h1{
+ text-align: center;
+ color: #d0ff84;
+}
+a{
+    text-align: center;
+    color: #d0ff84;  
+}
