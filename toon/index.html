@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <!-- шрифти -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lobster&display=swap" rel="stylesheet">
+    <!-- файл css -->
+    <link rel="stylesheet" type="text/css" href="toon-styles.css">
+    </head>
+    <!-- тіло з використанням спліту з сторонього ресурсу -->
+    <body class="body1">
+        <h1>Курс по налаштуванню графіки в блендер <br>
+            Як зарендерити 3-д модель в мультяшному стилі?</h1>
+            <span style="cursor:wait">Для початку нам потрібно увімкнути Freestyle, щоб отримати контур для моделей
+                він знаходиться в вкладці рендер в низу тут можна налаштувати ширину і колір
+                контору тепер створюємо об'єкт для початку зійде базова голова мавпи
+                накидуємо на неї модифікатор сабдів після чого налаштуйте 3 точне світло
+                (це три точки світла заді спереду і фонове) тепер зайдіть в режим шейдера
+                поставте режим рендеру (необхідно виставити Eevee) тепер скопіюйте
+                налаштування шейдера з фото, щоб отримати мапінг текстур координати
+                і вейв текстур виділіть колор-рамп і натисніть ctrl+t
+                нижня кольорова рампа відповідає за тіні виберіть будь-який колір
+                і зробіть градієнт. Риски та тіні можна змінити на крапки або що захочете 
+                щоб отримати ноди шейдеру тикайте на різні зображення нище
+                готово!</span><br> 
+        <div class="content">
+        <div class="split a"></div>
+        <div class="split b"></div>
+    </div>
+    <!-- скрипт спліту і його налаштування -->
+    <script src="https://unpkg.com/split.js/dist/split.min.js"></script>
+    <script>
+      Split(['.a', '.b'], {
+        gutterSize: 5,
+        // розташування лінії відносно двух картинок/
+        sizes: [52,50] 
+      });
+    </script>
+    </body>
+    <!-- тіло з дівами -->
+    <body class="container-wrapper">
+      
+      <!-- sc класи означають стилізований куб :) -->
+       <div class="sc">
+        <div class="image-frame">
+          <!-- воркмап це мапа на картинці яка перетворюєця в посилання -->
+            <img src="img/4.png" alt="variant1" usemap="#workmap1" width="500" height="300"> 
+            <p>стандарт</p>
+          </div> 
+    </div>
+    <div class="sc">
+        <div class="image-frame">
+            <img src="img/3.png" alt="variant1" usemap="#workmap2" width="500" height="300">
+            <p>крива лінія</p>
+          </div>
+
+    </div>
+    <div class="sc">
+        <div class="image-frame">
+            <img src="img/2.png" alt="variant1" usemap="#workmap3" width="500" height="300">
+            <p>лінія</p>
+          </div>
+        
+    </div>
+    <div class="sc">
+        <div class="image-frame">
+            <img src="img/1.png" alt="variant1" usemap="#workmap4" width="500" height="300">
+            <p>крапка</p>
+          </div>
+    </div>
+    <!-- добавлено в версії v3.6.b -->
+    <div class="sc">
+      <div class="image-frame">
+          <img src="img/5.png" alt="variant1" usemap="#workmap5" width="500" height="300">
+          <p>Змінює колір від освітлення</p>
+        </div>
+  </div>
+      <div class="sc">
+        <div class="image-frame">
+            <img src="img/6.png" alt="variant1" usemap="#workmap6" width="500" height="300">
+            <p>камуфляж</p>
+          </div>
+    </div>
+    <div class="sc">
+      <div class="image-frame">
+          <img src="img/7.png" alt="variant1" usemap="#workmap7" width="500" height="300">
+          <p>шимерний</p>
+        </div>
+  </div>
+  <div class="sc">
+    <div class="image-frame">
+        <img src="img/8.png" alt="variant1" usemap="#workmap8" width="500" height="300">
+        <p>розмитий</p>
+      </div>
+</div>
+    <!-- ще один sc куба тільки з текстом і посиланнями одне на офф сайт блендеру інше на мій йутуб де ми залили проект з географії в 3д і показували його в шк. на мультиборді 
+      такош тут є suumary це підкинув мені сергій бити палкую треба його-->
+    <div class="sc">
+            <span  class="text" style="cursor:ne-resize">Сайт де можна встановити блендер:</span><br>
+            <a href="https://www.blender.org" target="_blank">скачати: тицяй на мене</a>
+            <details>
+              <summary>ще трошки інформації</summary>
+              <p>знизу дають тортики Безплатно! ТАм ТОритикк!!!!!</p>
+            </details>
+            <br>
+            <span class="text" style="cursor:ne-resize">відео з використанням такої графіки:</span><br>
+            <a href="https://www.youtube.com/watch?v=AjmTNXaLCVs" target="_blank"> відео: тицяй на мене</a>
+            <details>
+              <summary>тортик</summary>
+              <p>тримай тортик</p>
+            </details>
+    </div>
+    <marquee direction="left">
+      Що нового в блендер 3.5? функції компонувальнику вікна перегляду, скульптурі зміщення вектора, 
+      вбудованим ресурсам волосся, вибірці багатьох джерел світла для Cycles це покращить швидкість рендеру в Cycles також полегшить створення волосся за допомогою кривих.
+    </marquee>
+    <a href="../index.html">⭅ Головна сторінка</a>
+    <!-- тут я використав баг який стався вибапдко я переніс дів кудись дуже далеко в низ і вирішив використовувати це як пасхалку туму клас і має назву bug -->
+    <div class="bug"><p>нащо ти сюди крутиш?</p></div>
+    <div class="bug2"><p>тортик неправда</p></div>
+    <!-- клас "прощавай капітошка" це самий останій клас в якому йде статистика нововедень -->
+    <div class="prochavay_kapitoshka"> <p class="inform"> v3.7.b остані зміни 06.04.2023 16:02 добавлено тіло головної сторінки сайту і інше... </p> <h1>Бувай :) </h1></div>
+      <!-- ті самі ворк мапи для картинок -->
+    <map name="workmap1">
+      <area shape="rect" coords="0,0,1920,1080" alt="material1" href="img/1material.jpg">
+    </map>
+    <map name="workmap2">
+      <area shape="rect" coords="0,0,1920,1080" alt="material2" href="img/3aterial-criva-linia.jpg">
+    </map>
+    <map name="workmap3">
+      <area shape="rect" coords="0,0,1920,1080" alt="material3" href="img/2material-linia.jpg">
+    </map>
+    <map name="workmap4">
+      <area shape="rect" coords="0,0,1920,1080" alt="material4" href="img/4material-craprka.jpg">
+    </map>
+    <map name="workmap5">
+      <area shape="rect" coords="0,0,1920,1080" alt="material5" href="img/5material-svitlo.jpg">
+    </map>
+    <map name="workmap6">
+      <area shape="rect" coords="0,0,1920,1080" alt="material6" href="img/6material-camuflash.jpg">
+    </map>
+    <map name="workmap7">
+      <area shape="rect" coords="0,0,1920,1080" alt="material7" href="img/7material-shimer.jpg">
+    </map>
+    <map name="workmap8">
+      <area shape="rect" coords="0,0,1920,1080" alt="material8" href="img/8material-rozmazano.jpg">
+    </map>
+    </body>
+</html>
+<!-- тортик неправда  -->
+<!-- всі попередні зміни :
+ v3.6.b дата 05.04.2023 22:18 бета зміни: нові текстури і їх мапи І ОБІЦЯНІ  нормальні шейдер ноди
+ v3.5.b дата 03.04.2023 14:44 бета зміни: добавив табло з новинами +багфікс з фоновим градієнтом
+ v3.4.b дата 31.03.2023 20:17 бета зміни: багфікс попроавив кнопку тицяй на мене і трошки змінив css
+ v3.3.b дата 31.03.2023 15:25 бета зміни: Добавленно заглушки для картинок тимчасово в поганій якості через проблеми з Blend файлом шейдеру,видалено стилізований курсор ni термін, зробленні підсказки в коді, відредаговано css код
+ v3.2.b дата 30.03.2023 20:22 бета зміни: код, новий фон курсор в виляді бульбашки
+ 3.1.a 26.03.2023 17:46 альфа зміни: фікс багів
+ V3.0.a. дата 26.03.2023 17:26 альфа зміни: добавлено лінійний фоновий градіент також добавлено клас body1
+    Мінорні версії які небули вавантежені на гіт хаб тому неможливо взнати їх дату і що було змінено але їх було не менше 5 
+ v2.5.a дата 23.03.2023 ??.?? альфа зміни: добавлено summary з заглушкою текстом всередені
+ v2.4.a дата 23.03.2023 ??.?? альфа зміни: зміна спліту і нормальне налаштування градіенту 
+    Мінорні Версії v1.5.a---v2.3.a дата 20.03.2023 ??:?? - 21.03.2023 ??:?? альфа зміни: зміни дуже малі тому отримали сатус мінорних загалоз зміни в стилях сайту
+ v1.4.P-a дата 17.03.2023 ??:?? пре-альфа зміни: добавленно ss класи для div пізніше будуть перейменованні в sc фіксація картинок в css фіксація розміру перший змінений курсор при наводі на текст 
+ v1.3.P-a дата 17.03.2023 ??:?? пре-альфа зміни: зміна кольорової теми сайту також добавленно текст який наразі відсутній на сайті добавлено класи для дівів image-frame і блоки з зображеннями мавпи
+ V1.2.P-a дата 12.03.2023 ??:?? пре-альфа зміни: перші спроби зобити спліт картинку з роботами
+ v1.1.P-a дата 12.03.2023 ??:?? пре-альфа зміни: окремий css
+ v1.0.P-a дата 12.03.2023 ??:?? пре-альфа зміни: ?
+
+-->
