@@ -1,14 +1,24 @@
 * {
     box-sizing: border-box;
-    cursor:url("info/cursur5.png"),default;
+    cursor:url("fail-cursor.png"),default;
 }
 body {
     margin: 0;
     height: 100vh;
     font-size: 26px;
-    background-image: url(info/hello.png);
     background-attachment: fixed;
-    color: #ffffff;                  
+    background-color: rgba(0, 0, 0, 0.808);
+}
+video{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
 }
 h1{
  color: #ffffff;
@@ -24,5 +34,8 @@ a:hover, a:active {
     color: #17234b;
   }
 summary{
+    color: #ffffff;
+}
+p{
     color: #ffffff;
 }
