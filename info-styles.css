@@ -1,13 +1,11 @@
 * {
     box-sizing: border-box;
-    cursor:url("fail-cursor.png"),default;
+    cursor:url("info/cursur5.png"), auto;
 }
 body {
     margin: 0;
     height: 100vh;
     font-size: 26px;
-    background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.808);
 }
 video{
         width: 100vw;
@@ -20,11 +18,14 @@ video{
         bottom: 0;
         z-index: -1;
 }
+
 h1{
  color: #ffffff;
+ font-family:  "Comfortaa";
 }
 li{
     color: #ffffff;
+    font-family:  "Comfortaa";
 }
 a:link, a:visited {
     color: #f3f3f3;
@@ -35,6 +36,7 @@ a:hover, a:active {
   }
 summary{
     color: #ffffff;
+    font-family:  "Comfortaa";
 }
 p{
     color: #ffffff;
