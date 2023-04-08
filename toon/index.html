@@ -124,7 +124,7 @@
     <div class="bug"><p>нащо ти сюди крутиш?</p></div>
     <div class="bug2"><p>тортик неправда</p></div>
     <!-- клас "прощавай капітошка" це самий останій клас в якому йде статистика нововедень -->
-    <div class="prochavay_kapitoshka"> <p class="inform"> v3.8.b остані зміни сторінки 06.04.2023 21:30 добавлено пару мавпочок </p> <h1>Бувай :) </h1></div>
+    <div class="prochavay_kapitoshka"> <p class="inform">print hedix</p> <h1>Бувай :) </h1></div>
       <!-- ті самі ворк мапи для картинок -->
     <map name="workmap1">
       <area shape="rect" coords="0,0,1920,1080" alt="material1" href="img/1material.jpg">
@@ -150,10 +150,32 @@
     <map name="workmap8">
       <area shape="rect" coords="0,0,1920,1080" alt="material8" href="img/8material-rozmazano.jpg">
     </map>
+    <div id="myOverlay">
+      <p>v3.8.b добавлено курсори 08.04.2023 20:57</p>
+    </div>
+        <!-- скріпт чату жпт бо самому писати ліньки і я вже призабув JS :) небийте-->
+        <script>
+          var input = ""; // зберігаємо послідовність натискання клавіш
+    
+          // додаємо обробник натискання клавіш
+          document.addEventListener("keydown", function (event) {
+            input += event.key.toLowerCase(); // додаємо натиснуту клавішу в послідовність
+    
+            // перевіряємо чи послідовність відповідає заданому шаблону
+            if (input.includes("hedix")) {
+              document.getElementById("myOverlay").style.display = "block"; // відображаємо табло з текстом
+              input = ""; // очищаємо послідовність
+            } else if (document.getElementById("myOverlay").style.display == "block") {
+              document.getElementById("myOverlay").style.display = "none"; // приховуємо табло з текстом
+              input = ""; // очищаємо послідовність
+            }
+          });
+        </script>
     </body>
 </html>
 <!-- тортик неправда  -->
 <!-- всі попередні зміни сторінки:
+v3.8.b остані зміни сторінки 06.04.2023 21:30 добавлено пару мавпочок
  v3.7.b дата 06.04.2023 21:30 добавлено пару мавпочок
  v3.6.b дата 05.04.2023 22:18 бета зміни: нові текстури і їх мапи І ОБІЦЯНІ  нормальні шейдер ноди
  v3.5.b дата 03.04.2023 14:44 бета зміни: добавив табло з новинами +багфікс з фоновим градієнтом
