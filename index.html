@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+      <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,12 +11,13 @@
         <link rel="stylesheet" type="text/css" href="info-styles.css">
     </head>
     <body>
-        <video src="info/0002-0250.mkv" autoplay muted loop></video>
+        <video src="all/0002-0250.mkv" autoplay muted loop></video>
         <h1>Доступні сторінки:</h1>
         <ol>
         <details>
-                <summary>Шейдери</summary>
-            <ul><li><a href="toon/index.html">Як зарендерити 3-д модель в мультяшному стилі?</a></li></ul>
+                <summary>Матеріали</summary>
+            <ul><li><a href="materials/toon/index.html">Як зарендерити 3-д модель в мультяшному стилі?</a></li></ul>
+            <ul><li><a href="fail/index.html">Налаштування Principle bsdf</a></li></ul>
             </details>
          <details>
             <summary>Інше</summary>
@@ -37,21 +39,27 @@
       </div>
     <!-- скрпт чату жпт бо самому писати ліньки і я вже призабув JS :) небийте-->
     <script>
-        var input = ""; // зберігаємо послідовність натискання клавіш
-  
-        // додаємо обробник натискання клавіш
-        document.addEventListener("keydown", function (event) {
-          input += event.key.toLowerCase(); // додаємо натиснуту клавішу в послідовність
-  
-          // перевіряємо чи послідовність відповідає заданому шаблону
-          if (input.includes("hedix")) {
-            document.getElementById("myOverlay").style.display = "block"; // відображаємо табло з текстом
-            input = ""; // очищаємо послідовність
-          } else if (document.getElementById("myOverlay").style.display == "block") {
-            document.getElementById("myOverlay").style.display = "none"; // приховуємо табло з текстом
-            input = ""; // очищаємо послідовність
-          }
-        });
+var input = ""; // зберігаємо послідовність натискання клавіш
+
+// додаємо обробник натискання клавіш
+document.addEventListener("keydown", function (event) {
+  input += event.key.toLowerCase(); // додаємо натиснуту клавішу в послідовність
+
+  // перевіряємо чи послідовність відповідає заданому шаблону
+  if (input.includes("hedix") || input.includes("рувшч")) {
+    document.getElementById("myOverlay").style.display = "block"; // відображаємо табло з текстом
+    input = ""; // очищаємо послідовність
+  }
+});
+
+// додаємо обробник натискання миші
+document.addEventListener("mousedown", function (event) {
+  // перевіряємо чи табло з текстом відображається
+  if (document.getElementById("myOverlay").style.display == "block") {
+    document.getElementById("myOverlay").style.display = "none"; // приховуємо табло з текстом
+    input = ""; // очищаємо послідовність
+  }
+});
       </script>
     </body>
 </html>

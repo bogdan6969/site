@@ -42,7 +42,7 @@ p{
 }
 /* кастомні курсори */
 body {
-    cursor: url('info/cursur6.png'), default;
+    cursor: url('info/cursur6.png'), default ;
 }
 img:hover{
     cursor: url('info/pointer.png'), pointer;
