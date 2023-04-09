@@ -1,0 +1,209 @@
+* {
+box-sizing: border-box;
+cursor: url('../../all/cursur6.png'), default;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    font-size: 26px;
+    background-image: linear-gradient(0deg,#174b44,#1f0e1c 90%);
+    background-size: 500% 500%;
+}
+/* спліт */
+.content {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.split {
+    width:100%;
+    height:100%;
+    padding: 30px;
+    border: 1px solid;
+}
+.a {
+    background: url("img/f1.png");
+    background-attachment: fixed;
+}
+.b {
+    background: url("img/f2.png");
+    background-attachment: fixed;
+}
+.gutter {
+    cursor: e-resize;
+    height: 100%;
+    background-image: linear-gradient(0deg,#17434b 10%,#3e2137 80%);
+}
+/* текст */
+marquee{
+  color: #e2b230;
+  background-image: linear-gradient(-90deg,#174b44,#30162b00 90%);
+  font-family: "Lobster";
+  font-weight: 10;
+}
+h1{
+    text-align: center;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e2b330;
+    font-family: "Lobster";
+    font-weight: 10;
+}
+h2{ 
+    text-align: right;
+    color: #e2b330;
+}
+p{
+    color: #e2b330;
+    text-align:center;
+    font-family: "Comfortaa";
+}
+.text{
+    font-family: "Comfortaa";
+}
+a{
+   font-family: "Lobster";
+   text-align: center;
+}
+summary{
+    font-family: "Comfortaa";
+}
+P.fig {
+  text-align: right; 
+}
+span{
+    color: #e2b330;
+    text-align: center;
+}
+summary{
+    color: #e2b330;
+    text-align: left;
+
+}
+.inform{
+  text-align: left;
+}
+/* бокси і інше */
+.content {
+    border:4px solid #e2b330;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.sc {
+    border: 2px solid #e2b330;
+    height: 470px;
+    padding: 5px;
+    width: 600px;
+    float: left;
+    margin-bottom: 20px;
+    background-image: linear-gradient(0deg,#174b44,#1f0e1c 90%);
+    margin-left: 15px;
+}
+.image-frame {
+  background-image: linear-gradient(0deg,#17434b 10%,#1f0e1c 80%);
+  width: auto; 
+  margin: 20px;
+  border: 4px solid #331b2e;
+  padding: 10px;
+  text-align: center;
+}
+.container-wrapper {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: normal;
+}
+div {
+  border: 2px solid #e2b330;
+  padding: 5px;
+  width: 600px;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bug{
+  margin: 0;
+  position: absolute;
+  top: 600%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+.bug2{
+  margin: 0;
+  position: absolute;
+  top: 700%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+.prochavay_kapitoshka{
+  margin: 0;
+  position: absolute;
+  top: 800%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+.visota{
+  height: 500px;
+}
+a:link, a:visited {
+  background-color: #17434b;
+  color: #e2b330;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration:wavy;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: #e2b330;
+  color: #17434b;
+}
+/* кастомні курсори */
+img:hover{
+  cursor: url('../../all/pointer.png'), pointer;
+}
+a:hover {
+  cursor: url('../../all/pointer2.png'), pointer;
+}
+area:hover {
+  cursor: url('../../all/pointer.png'), pointer;
+}
+/* це тоже від чату жпт  */
+#myOverlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.822);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#myOverlay p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: rgb(255, 123, 0);
+  text-align: center;
+}
+
+
+
+
+
+  
+
+
+
