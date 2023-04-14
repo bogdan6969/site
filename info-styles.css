@@ -1,23 +1,33 @@
 * {
     box-sizing: border-box;
 }
+head{
+    min-height: 80px;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    z-index: 10;
+}
 body {
     margin: 0;
     height: 100vh;
     font-size: 26px;
 }
-video{
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        z-index: -1;
+#bg-video, #bg-video-2 {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
 }
 
+#bg-video-2 {
+    display: none;
+}
 h1{
  color: #ffffff;
  font-family:  "Comfortaa";
@@ -42,13 +52,13 @@ p{
 }
 /* кастомні курсори */
 body {
-    cursor: url('info/cursur6.png'), default ;
+    cursor: url('all/cursur6.png'), default ;
 }
 img:hover{
-    cursor: url('info/pointer.png'), pointer;
+    cursor: url('all/pointer.png'), pointer;
 }
 a:hover {
-    cursor: url('info/pointer2.png'), pointer;
+    cursor: url('all/pointer2.png'), pointer;
 }
 /* це тоже від чату жпт  */
 #myOverlay {
@@ -74,3 +84,96 @@ a:hover {
     color: rgb(255, 123, 0);
     text-align: center;
   }
+#menuVertical{
+    width: 71px;
+    height: auto;
+    position: fixed;
+    z-index: 5;
+    top: 79px;
+}
+#menuVertical ul{
+    display: block;
+    width: 54px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+#menuVertical ul li{
+    display: block;
+    width: 17px;
+    position: relative;
+}
+#menuVertical ul li a{
+    position: relative;
+    display: block;
+    width: 220px;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    text-decoration: none;
+    background:#ebebeb44;
+    text-shadow: 2px 2px 3px #929191;
+}
+#menuVertical ul li a:hover,
+#menuVertical ul li:hover a{
+    background: #47474791;
+    color: #ffffff;
+}
+#menuVertical ul li ul{
+    position: absolute;
+    top: 0px;
+    left: 220px;
+    display: none;
+    width: auto;
+}
+#menuVertical ul li:hover ul{
+    display: block;
+}
+#menuVertical ul li ul a{
+    white-space: nowrap;
+    text-transform: none;
+    padding: 10px 20px;
+    width: 500px;
+}
+#menuVertical ul li ul a:hover{
+    background-color: #17234b91;
+}
+.menu{
+    position: absolute;
+    width: 220px;
+    height: 100%;
+    background: #17234b75;
+    box-shadow: 1px 2px 3px #888;
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+    text-shadow:2px 2px 3px #105213;
+}
+p{
+    color: #3dc044;
+}
+.footer{
+    position: absolute;
+    width: 198px;
+    height: 88px;
+    bottom: -29px;
+    background: #70363675;
+    z-index: 13;
+    border-top: 1px solid rgb(219, 94, 4);
+    color: #b11414;
+}
+.footer{
+    transform: rotate(-90deg);
+    left: -77px;
+    border-right: 1px solid #ebebeb44;
+    height: 24px;
+    bottom: 77px;
+    text-align: left;
+    padding-left: 11px;
+    padding-top: 6px;
+    padding-bottom: 25px;
+}
