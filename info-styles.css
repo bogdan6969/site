@@ -12,6 +12,7 @@ body {
     margin: 0;
     height: 100vh;
     font-size: 26px;
+    position: fixed;
 }
 #bg-video, #bg-video-2 {
     width: 100vw;
@@ -23,6 +24,7 @@ body {
     top: 0;
     bottom: 0;
     z-index: 1;
+    
 }
 
 #bg-video-2 {
