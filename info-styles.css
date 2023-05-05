@@ -14,7 +14,7 @@ body {
     font-size: 26px;
     position: fixed;
 }
-#bg-video, #bg-video-2 {
+#bg-video, #bg-video-2 ,#bg-video-3 {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -28,6 +28,9 @@ body {
 }
 
 #bg-video-2 {
+    display: none;
+}
+#bg-video-3 {
     display: none;
 }
 h1{
